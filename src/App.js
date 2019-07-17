@@ -37,7 +37,7 @@ function App (){
     <div className="app">
     <h1>Todo list</h1>
     <AddTodoForm addTodo={addTodo}/>
-    {
+    { 
       todos.map((todo, index)=>{
         const { text, isDone } = todo;
         const btnText = isDone ? "Undo" : "Done";
